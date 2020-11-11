@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SpelKoning.Land1">
+    <ContentPage.Resources>
+        <StyleSheet Source="Styles/WereldKiezerStyle.css" />
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <Grid>
+            <Grid VerticalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Image HorizontalOptions="Start" Grid.Row="1" Grid.Column="0" StyleClass="pijl" Source="http://i456314.hera.fhict.nl/pijllinks.png"
+                       x:Name="pijllinks">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="Left"
+                            NumberOfTapsRequired="1" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image HorizontalOptions="End" Grid.Row="1" Grid.Column="2" StyleClass="pijl" Source="http://i456314.hera.fhict.nl/pijlrechts.png"
+                       x:Name="pijlrechts">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="Right"
+                            NumberOfTapsRequired="1" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <StackLayout Grid.Column="0" Grid.Row="2" />
+            </Grid>
+            <!-- <Button StyleClass="button" HorizontalOptions="StartAndExpand" VerticalOptions="End" Text="Speel" Clicked="SpeelKnop" /> -->
+            <Image HorizontalOptions="StartAndExpand" VerticalOptions="End" Source="http://i456314.hera.fhict.nl/speel.png"
+                   x:Name="speel" Margin="30">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped="SpeelKnop"
+                        NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

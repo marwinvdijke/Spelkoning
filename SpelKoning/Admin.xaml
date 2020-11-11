@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SpelKoning.Admin">
+    <ContentPage.Content>
+        <StackLayout Margin="20,35,20,20">
+            <Entry x:Name="nameEntry"
+                   Placeholder="Enter name" IsTextPredictionEnabled="False" IsSpellCheckEnabled="False" />
+            <Entry x:Name="password"
+                   Placeholder="Enter password" IsPassword="True" IsTextPredictionEnabled="False" IsSpellCheckEnabled="False" />
+            <Button Text="Add to Database"
+                    Clicked="OnButtonClicked" />
+            <ListView x:Name="listView">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding FullName}"
+                                  Detail="{Binding Voortgang}" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Image HorizontalOptions="End" Source="http://i456314.hera.fhict.nl/terug.png" x:Name="terug" WidthRequest="200" >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped="StopKnop"
+                        NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

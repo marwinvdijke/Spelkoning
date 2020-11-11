@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "WnzKm+cZOyHSBJd9VT6nmyO/AXcMA0mBJjZCWXYEmeyr2HDw1L88MpKgP9eG/MXRlxO9k1VW/PWeTlewhu0bQw==",
+  "success": true,
+  "projectFilePath": "/Users/marwinvandijke/Desktop/SpelKoning/SpelKoning.iOS/SpelKoning.iOS.csproj",
+  "expectedPackageFiles": [
+    "/Users/marwinvandijke/.nuget/packages/sqlite-net-pcl/1.7.335/sqlite-net-pcl.1.7.335.nupkg.sha512",
+    "/Users/marwinvandijke/.nuget/packages/sqlitepclraw.bundle_green/2.0.3/sqlitepclraw.bundle_green.2.0.3.nupkg.sha512",
+    "/Users/marwinvandijke/.nuget/packages/sqlitepclraw.core/2.0.3/sqlitepclraw.core.2.0.3.nupkg.sha512",
+    "/Users/marwinvandijke/.nuget/packages/sqlitepclraw.provider.dynamic_cdecl/2.0.3/sqlitepclraw.provider.dynamic_cdecl.2.0.3.nupkg.sha512",
+    "/Users/marwinvandijke/.nuget/packages/system.buffers/4.4.0/system.buffers.4.4.0.nupkg.sha512",
+    "/Users/marwinvandijke/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512",
+    "/Users/marwinvandijke/.nuget/packages/system.runtime.compilerservices.unsafe/4.5.2/system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "/Users/marwinvandijke/.nuget/packages/xamarin.essentials/1.5.3.2/xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "/Users/marwinvandijke/.nuget/packages/xamarin.forms/4.8.0.1560/xamarin.forms.4.8.0.1560.nupkg.sha512"
+  ],
+  "logs": []
+}

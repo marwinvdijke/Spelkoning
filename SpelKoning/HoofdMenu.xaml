@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SpelKoning.HoofdMenu">
+    <ContentPage.Resources>
+            <StyleSheet Source="Styles/HoofdMenuStyle.css"></StyleSheet>
+        </ContentPage.Resources>
+        <ContentPage.Content>
+            <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center">
+                <Image HorizontalOptions="End" Source="http://i456314.hera.fhict.nl/speel.png" x:Name="speel"  >
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="Button_OnClicked"
+                            NumberOfTapsRequired="1" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image HorizontalOptions="End" Source="http://i456314.hera.fhict.nl/leraar.png" x:Name="leraar">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="adminknop"
+                            NumberOfTapsRequired="1" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image HorizontalOptions="End" Source="http://i456314.hera.fhict.nl/credits.png" x:Name="opties" >
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="instellingen"
+                            NumberOfTapsRequired="1" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image HorizontalOptions="End" Source="http://i456314.hera.fhict.nl/terug.png" x:Name="terug">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="StopKnop"
+                            NumberOfTapsRequired="1" />
+                    </Image.GestureRecognizers>
+                </Image>
+            </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SpelKoning.WereldKiezer">
+    <ContentPage.Resources>
+        <StyleSheet Source="Styles/WereldKiezerStyle.css" />
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <Grid VerticalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Image HorizontalOptions="Start" Grid.Row="1" Grid.Column="0" StyleClass="pijl" Source="http://i456314.hera.fhict.nl/pijllinks.png" x:Name="pijllinks">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="Left"
+                            NumberOfTapsRequired="1" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image HorizontalOptions="End" Grid.Row="1" Grid.Column="2" StyleClass="pijl" Source="http://i456314.hera.fhict.nl/pijlrechts.png" x:Name="pijlrechts">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="Right"
+                            NumberOfTapsRequired="1" />
+                    </Image.GestureRecognizers>
+                </Image>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

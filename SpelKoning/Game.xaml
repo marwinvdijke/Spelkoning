@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SpelKoning.Game">
+    <ContentPage.Resources>
+        <StyleSheet Source="Styles/GameStyle.css"></StyleSheet>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <Grid>
+            <Label Text="Score: 0" HorizontalOptions="Start" VerticalOptions="Start" FontSize="40" x:Name="scorename" Margin="20,20,20,20"/>
+            <StackLayout HorizontalOptions="End" VerticalOptions="Start" Orientation="Horizontal">
+                <Button Text="Hint" Clicked="Hint_Clicked" FontSize="40" Margin="20,20,20,20" CornerRadius="-1" />
+                <Button Text="Quit" Clicked="Quit_Clicked" FontSize="40" Margin="20,20,20,20" CornerRadius="-1" />
+            </StackLayout>
+            <StackLayout VerticalOptions="StartAndExpand" Margin="0,100,0,0">
+                <StackLayout  HorizontalOptions="Center">
+                    <Label Text="Woord" FontSize="60" x:Name="woord" FontAttributes="Bold"></Label>
+                </StackLayout>
+                <StackLayout HorizontalOptions="Center" Orientation="Horizontal">
+                    <Entry Completed="OnEntryCompleted"
+                           Placeholder="Antwoord"
+                           IsSpellCheckEnabled="False"
+                           IsTextPredictionEnabled="False"
+                           x:Name="inputbox"
+                           MaxLength="15"
+                           Keyboard="Plain" />
+                    <Image Source="http://i456314.hera.fhict.nl/Kroon.png" x:Name="submitknop">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer
+                                Tapped="Submit"
+                                NumberOfTapsRequired="1" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
